@@ -19,6 +19,7 @@ public class Main {
                     flag = 1;
                     break;
                 }
+                else if(flag == 1) throw new Exception("Wrong input!");
             }
             if (flag == 1) {
                 numbers.add(Integer.parseInt(array[i]));
