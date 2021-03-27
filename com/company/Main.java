@@ -16,6 +16,7 @@ public class Main {
         for (int i = 0; i < array.length; i += 2) {
             for (char s : array[i].toCharArray()) {
                 if (Character.isDigit(s)) {
+                    if(flag == 2) throw new Exception("Wrong input!");
                     flag = 1;
                     break;
                 }
